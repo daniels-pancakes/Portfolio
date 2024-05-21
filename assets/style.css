@@ -287,9 +287,42 @@ width:100%;
 	border-top: 16px solid #FF5928;
 }
 
+.banner {
+background-color: #FF5928;
+border: solid;
+color:#002626;
+letter-spacing:3px;
+text-align: center;
+margin-top: 40px;
+padding-top:7px;
+}
+
+.featproject {
+    margin:auto;
+width:400px;
+height:600px;
+border:solid white;
+margin-top: 40px;
+}
+
 .project {
     margin:auto;
-    width:;
+    width:400px;
+    height:600px;
+border:solid white;
+margin-top: 40px;
+}    
+
+.about {
+    margin:auto;
+    width:400px;
+    height:600px;
+border:solid white;
+margin-top: 40px;
+}    
+
+.contact {
+
 }
 
 .cardheader {
