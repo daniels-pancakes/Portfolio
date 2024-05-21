@@ -2,29 +2,132 @@
     box-sizing: border-box;
   }
 
-  .geo-regular {
-    font-family: "Geo", sans-serif;
+  .barlow-semi-condensed-thin {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .barlow-semi-condensed-extralight {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .barlow-semi-condensed-light {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+  }
+  
+  .barlow-semi-condensed-regular {
+    font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 400;
     font-style: normal;
   }
   
-  .geo-regular-italic {
-    font-family: "Geo", sans-serif;
+  .barlow-semi-condensed-medium {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .barlow-semi-condensed-semibold {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .barlow-semi-condensed-bold {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .barlow-semi-condensed-extrabold {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .barlow-semi-condensed-black {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+  }
+  
+  .barlow-semi-condensed-thin-italic {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+  }
+  
+  .barlow-semi-condensed-extralight-italic {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+  }
+  
+  .barlow-semi-condensed-light-italic {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+  }
+  
+  .barlow-semi-condensed-regular-italic {
+    font-family: "Barlow Semi Condensed", sans-serif;
     font-weight: 400;
     font-style: italic;
   }
+  
+  .barlow-semi-condensed-medium-italic {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+  }
+  
+  .barlow-semi-condensed-semibold-italic {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .barlow-semi-condensed-bold-italic {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+  .barlow-semi-condensed-extrabold-italic {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+  }
+  
+  .barlow-semi-condensed-black-italic {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+  }
+  
 .intro {
     color:#FF5928;
-    font-size:80px;
-    z-index:9;
-    position:relative;
-} 
+    font-size:24px;
+    margin-top:-110px;
+    line-height:28px;
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing:3px;
+}
+
 
 body {
+    margin:0;
     background-color: #002626;
     color:#FF5928;
     border-color: #FF5928;
-    font-family:  "Geo", sans-serif;
+    font-family:  "Barlow Semi Condensed", sans-serif;
 }
 header h1 {
     text-align: center;
@@ -47,24 +150,22 @@ h2 {
    font-size:22px; 
 }
 
-section { display:flex;
-flex-flow: row wrap;
-justify-content: space-between;
-width:100%;
+section {
+    width: 100%;
 }
 
-div {
-    flex: 1 0 30%;
-    text-align: left;
-    border: solid;
-    border-width: 0.18em;
-    margin-top: 30px;
-    margin-left:0.5%;
-    margin-right:0.5%;
-    padding-left:15px;
-    padding-right:15px;
+/* div { 
+    flex: 1 0 30%; 
+    text-align: left; 
+    border: solid; 
+    border-width: 0.18em; 
+    margin-top: 30px; 
+    margin-left:0.5%; 
+    margin-right:0.5%; 
+    padding-left:15px; 
+    padding-right:15px; 
     background: linear-gradient(to top,#000000, #ffd66700);
-}
+} */
 
 p {
 font-size:16px;
@@ -81,23 +182,35 @@ pre {
     word-wrap: break-word;  
 }
 
+nav {
+display:block;
+margin:auto;
+width:400px;
+text-align:center;
+margin-top: 20px;
+letter-spacing: 3px;
+}
+
 nav a {
-    font-size:18px;
+    font-size:14px;
     text-decoration: none;
-    color:#FF5928
+    color:#FF5928;
+    padding-left: 14px;
+    padding-right:14px;
 }
 
 .headercontainer {
-width:100%;    
+width:100%;
 }
+
 .headerbox {
 
     width:400px;
-    max-width: 370px;
-    min-width: 330px;
+    height:365px;
     border: solid;
     border-width: 0.1em;
-    margin-top: 240px;
+    margin:auto;
+    margin-top:220px;
     padding-left:15px;
     padding-right:15px;
     background-image: linear-gradient(to top, #002626, #002626);
@@ -109,8 +222,7 @@ width:100%;
     border-width: 0.1em;
     width:274px;
     height:388px;
-    margin-left:5%;
-    margin-right:5%;
+    margin:auto;
     position:relative;
     padding-top:20px;
     margin-top:-200px;
@@ -125,12 +237,59 @@ width:100%;
     align-self: center;
 }
 
+.wrapper {
+    width: 150%;
+    overflow: hidden;
+  }
+  
+  .marquee {
+    white-space: nowrap;
+    overflow: visible;
+    display: block;
+    animation: marquee 30s linear infinite;
+  }
+  
+  .marquee p {
+    display: block;
+  }
+  
+  .marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 200px;
+    overflow-x: hidden;
+  }
+  
+  .track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+  }
+  
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+
+.scrollc2a {
+    margin:auto; margin-top:32px;
+}
+
 .triangle-down {
+    display:block;
+    margin:auto;
 	width: 0;
 	height: 0;
-	border-left: 1px solid transparent;
-	border-right: 1px solid transparent;
-	border-top: 2px solid #FF5928;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 16px solid #FF5928;
+}
+
+.project {
+    margin:auto;
+    width:;
 }
 
 .cardheader {
@@ -146,14 +305,7 @@ width:100%;
     background-color:#002020;
 }
 
-div:hover,
-div:hover .cardheader {
-    box-shadow: inset 0px 0px 0px 0px
-    #FF5928, 0 0 15px
-    #FF5928;
-}
-
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 992px) {
     div { 
         flex-flow: column wrap;
         flex: 1 1 40%;
@@ -167,7 +319,7 @@ div:hover .cardheader {
         line-height:28px;
     }
     
-}
+} */
 
 @media screen and (max-width: 768px) {
     
@@ -178,9 +330,9 @@ div:hover .cardheader {
         margin-right:10%; 
     }
     .intro {
-        font-size:30px;
+        font-size:24px;
         color:#FF5928;
-        line-height:28px;
+        line-height:30px;
     }
 
 }
