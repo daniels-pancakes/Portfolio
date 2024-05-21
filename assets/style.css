@@ -14,18 +14,16 @@
     font-style: italic;
   }
 .intro {
-    color:#ffd667;
-    border:solid;
-    border-left:none;
-    border-right:none;
+    color:#FF5928;
     font-size:80px;
+    z-index:9;
+    position:relative;
 } 
 
 body {
-    background: linear-gradient(to top,);
-    background-color: #1c1813;
-    color:#b4b8fd;
-    border-color: #b4b8fd;
+    background-color: #002626;
+    color:#FF5928;
+    border-color: #FF5928;
     font-family:  "Geo", sans-serif;
 }
 header h1 {
@@ -60,13 +58,12 @@ div {
     text-align: left;
     border: solid;
     border-width: 0.18em;
-    border-radius: 15px;
     margin-top: 30px;
     margin-left:0.5%;
     margin-right:0.5%;
     padding-left:15px;
     padding-right:15px;
-    background-image: linear-gradient(to top, #343548, #1c1813);
+    background: linear-gradient(to top,#000000, #ffd66700);
 }
 
 p {
@@ -84,25 +81,76 @@ pre {
     word-wrap: break-word;  
 }
 
-.cardheader {
-    width:90%;
+nav a {
+    font-size:18px;
+    text-decoration: none;
+    color:#FF5928
+}
+
+.headercontainer {
+width:100%;    
+}
+.headerbox {
+
+    width:400px;
+    max-width: 370px;
+    min-width: 330px;
+    border: solid;
+    border-width: 0.1em;
+    margin-top: 240px;
+    padding-left:15px;
+    padding-right:15px;
+    background-image: linear-gradient(to top, #002626, #002626);
+
+}
+
+.portraitbox {
     border:solid;
     border-width: 0.1em;
-    border-radius: 5px;
+    width:274px;
+    height:388px;
+    margin-left:5%;
+    margin-right:5%;
+    position:relative;
+    padding-top:20px;
+    margin-top:-200px;
+    margin-bottom:140px;
+    background-color:#002626;
+}
+
+.portraitbox img {
+    display:block;
+    text-align:center;
+    margin:auto 0;
+    align-self: center;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	border-top: 2px solid #FF5928;
+}
+
+.cardheader {
+
+    border:solid;
+    border-width: 0.1em;
     margin-left:5%;
     margin-right:5%;
     padding-left:15px;
     padding-right:15px;
     position:relative;
     margin-top:-15px;
-    background-color:#1c1813;
+    background-color:#002020;
 }
 
 div:hover,
 div:hover .cardheader {
     box-shadow: inset 0px 0px 0px 0px
-    #b4b8fd, 0 0 15px
-    #b4b8fd;
+    #FF5928, 0 0 15px
+    #FF5928;
 }
 
 @media screen and (max-width: 992px) {
@@ -114,8 +162,9 @@ div:hover .cardheader {
         width:40%;
     }
     .intro {
-        font-size:50px;
-        color:#ffd667;
+        font-size:30px;
+        color:#FF5928;
+        line-height:28px;
     }
     
 }
@@ -129,8 +178,9 @@ div:hover .cardheader {
         margin-right:10%; 
     }
     .intro {
-        font-size:50px;
-        color:#ffd667;
+        font-size:30px;
+        color:#FF5928;
+        line-height:28px;
     }
 
 }
