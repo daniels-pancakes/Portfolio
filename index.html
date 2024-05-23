@@ -7,17 +7,28 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="./assets/style.css" />
+
+        <!-- The title of my page contains a fairly obscure reference to a video game series that I would be shocked if anyone caught. Video games are a huge inspiration for me creatively and I wanted to channel some of what I love into this project since I feel a portfolio is a chance to express myself.
+
+        In particular I drew inspiration from some of the incredible user interface design work from a handful of games I thought had really incredible aesthetics.
+
+        But I love these somewhat strange-sounding yet somewhat profound one-off lines sometimes encountered in video games and related media. I'll probably drop a few here and there for fun. -->
         <title>Daniel D. Portfolio WE ARE FINALLY FREE IN SPACE</title>
     </head>
 
 
     <body>
+        <!-- I created this main tag early in when I was initially getting an idea of how I would structure my page layout. Initially thinking I may need to have everything within a flex container. I ultimately did not end up using it but will keep it in case plans change in the future. -->
         <main class = "container"></main>
+
+            <!-- I created a simple navigation bar for the top of the page to link to various sections. -->
             <nav id = "top">
             <a href ="#about">ABOUT</a> 
             <a href ="#project">PROJECTS</a> 
             <a href ="#contact">CONTACT</a>
             </nav>
+
+        <!-- The header might look a little complicated for what I was trying to put together with it. These are just containers within containers to create my landing page graphic. I wanted it to contain a portrait, a heading and an invitation for user to scroll down through page's content. That is where the triangle arrow came in. -->
         <header class="headercontainer">
             <header class="headerbox">
                 <header class="portraitbox">
@@ -31,7 +42,13 @@
                 </section>
             </header>
         </header>
+
+        <!-- The rest of the page's sections all begin to follow a simple pattern:
+        I have a large banner separating out each section which I've given the class banner as you'll see below. Then after a little margin for breathing room the content section begins: -->
+
         <section class = "banner">
+
+        <!-- As I progressed I began to get the sense the larger featured project would require the most time and work. As a creating it used the later project section formats but with adjustments to get the functionality I needed. -->
         <h2 id ="project">FEATURED PROJECT</h2>
         </section>
         <section class = "featproject">
@@ -43,6 +60,8 @@
                 05 - 2024</p>
             </aside>
         </section>
+
+        <!-- And you'll notice the design pattern I mentioned before repeating here and for the subsequent sections. -->
         <section class = "banner">
             <h2>ADDITIONAL PROJECTS</h2>
             </section>
@@ -51,6 +70,7 @@
             <article class = "prjplaceholder">
                 <p>COMING<br>SOON</p>
             </article>
+            <!-- I may come back to revisit my treatment of these asides. I would like to somehow allow for insertion of additional information or a short blurb about each project but I ran out of time to explore. -->
             <aside class = "prjdetail">
                 <p>PORTFOLIO ENTRY NO. XX<br>
                 TITLE<br>
