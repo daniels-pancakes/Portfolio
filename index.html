@@ -13,10 +13,10 @@
 
     <body>
         <main class = "container"></main>
-            <nav>
+            <nav id = "top">
             <a href ="#about">ABOUT</a> 
-            <a href>PROJECTS</a> 
-            <a href>CONTACT</a>
+            <a href ="#project">PROJECTS</a> 
+            <a href ="#contact">CONTACT</a>
             </nav>
         <header class="headercontainer">
             <header class="headerbox">
@@ -32,9 +32,16 @@
             </header>
         </header>
         <section class = "banner">
-        <h2>FEATURED PROJECT</h2>
+        <h2 id ="project">FEATURED PROJECT</h2>
         </section>
         <section class = "featproject">
+            <article class = "featprjimg">
+            </article>
+            <aside class = "fpdetail">
+                <p>PORTFOLIO ENTRY NO. 01<br>
+                BOOTCAMP MINI PROJECT CSS CHEATSHEET<br>
+                05 - 2024</p>
+            </aside>
         </section>
         <section class = "banner">
             <h2>ADDITIONAL PROJECTS</h2>
@@ -42,14 +49,22 @@
 
         <section class = "project">
             <article class = "prjplaceholder">
-                <p>COMING<br> SOON</p>
+                <p>COMING<br>SOON</p>
             </article>
             <aside class = "prjdetail">
-                <div style="border:solid;">
-                <p>PORTFOLIO ENTRY NO. XX</p>
-                <span>TITLE</span>
-                <p>XX - 20XX</p>
-                </div>
+                <p>PORTFOLIO ENTRY NO. XX<br>
+                TITLE<br>
+                XX - 20XX</p>
+            </aside>
+        </section>
+        <section class = "project">
+            <article class = "prjplaceholder">
+                <p>COMING<br>SOON</p>
+            </article>
+            <aside class = "prjdetail">
+                <p>PORTFOLIO ENTRY NO. XX<br>
+                TITLE<br>
+                XX - 20XX</p>
             </aside>
         </section>
         <section class = "banner">
@@ -76,7 +91,7 @@
 
     </body>
     <footer>
-        <p>TOP</p>
+        <p><a href="#top" style="text-decoration: none; color:white;">TOP</a></p>
         <p>DANIEL DUNNEMANN 2024</p>
         </footer>
 </html>

@@ -270,12 +270,45 @@ padding-top:7px;
 }
 
 .featproject {
+  display:flex;
+  flex-flow:column wrap;
     margin:auto;
-width:400px;
+width:70%;
+max-width:960px;
+min-width:400px;
 height:600px;
 border:solid white;
 border-width:0.1em;
 margin-top: 40px;
+}
+
+.featprjimg {
+  flex:1 1 60%;
+  height:60%
+  max-height: 550px;
+  width:100%;
+  flex-flow:column wrap;
+  margin:auto 0;
+  background-image:url("miniproject.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position:center;
+}
+
+.fpdetail {
+  flex:1 1 10%;
+  background-color:white;
+}
+
+.fpdetail p {
+  margin:0 auto;
+text-align:center;
+width:70%;
+max-height:76px;
+line-height:20px;
+border:solid;
+color:#002626;
+margin-top:37px;
 }
 
 .project {
@@ -293,33 +326,40 @@ margin-top: 40px;
 
 .prjplaceholder {
   flex:1 1 60%;
-  height:350px;
+  height:60%;
+  max-height:350px;
   flex-flow:column wrap;
+  margin:auto 0;
 }
 
 .prjplaceholder p {
+  margin:0 auto;
+  text-align:center;
+  width:70%;
   font-size:40px;
   color:white;
   line-height: 38px;
-  margin:auto 0;
+  margin-top:90px;
 }
 
 .prjdetail {
   flex:1 1 30%;
-  max-height:50px;
-}
-
-.prjdetail span {
-  font-weight:400;
+  background-color:white;
 }
 
 .prjdetail:hover {
 
 }
 
-.prjdetail div {
+.prjdetail p {
+  margin:0 auto;
 text-align:center;
-width:80%;
+width:70%;
+max-height:76px;
+line-height:20px;
+border:solid;
+color:#002626;
+margin-top:37px;
 }
 
 .about {
@@ -380,18 +420,58 @@ color:white;
 font-size:10px;
 line-height:10px;
 padding:4px;
+letter-spacing: 3px;
 }
 
+@media screen and (min-width:696px) {
+  .featprjimg {
+    flex:1 1 60%;
+    height:60%
+    max-height: 550px;
+    width:100%;
+    flex-flow:column wrap;
+    margin:auto 0;
+    background-image:url("miniprojectbig.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+  }
+}
 @media screen and (min-width:768px) {
   .project {
     flex-flow:row nowrap;
 
   }
-}
-.prjdetail {
+
+  .prjdetail {
   flex:1 1 30%;
   max-height:none;
-  background-color:black;
+  }
+
+  .prjdetail p {
+    margin:0 auto;
+  text-align:center;
+  width:70%;
+  max-height:106px;
+  line-height:20px;
+  border:solid;
+  color:#002626;
+  margin-top:150px;
+  padding:10px;
+  }
+
 }
-
-
+@media screen and (min-width:1260px) {
+  .featprjimg {
+    flex:1 1 60%;
+    height:60%
+    max-height: 550px;
+    width:100%;
+    flex-flow:column wrap;
+    margin:auto 0;
+    background-image:url("miniprojectbigg.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+  }
+}
