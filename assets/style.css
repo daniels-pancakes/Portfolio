@@ -209,6 +209,7 @@ width:100%;
     height:365px;
     border: solid;
     border-width: 0.1em;
+    border-color:white;
     margin:auto;
     margin-top:220px;
     padding-left:15px;
@@ -279,20 +280,52 @@ margin-top: 40px;
 
 .project {
   display:flex;
+  flex-flow:column wrap;
     margin:auto;
     width:70%;
     max-width:960px;
     min-width:400px;
-    height:600px;
+    height:400px;
 border:solid white;
 border-width:0.1em;
 margin-top: 40px;
 }
 
+.prjplaceholder {
+  flex:1 1 60%;
+  height:350px;
+  flex-flow:column wrap;
+}
+
+.prjplaceholder p {
+  font-size:40px;
+  color:white;
+  line-height: 38px;
+  margin:auto 0;
+}
+
+.prjdetail {
+  flex:1 1 30%;
+  max-height:50px;
+}
+
+.prjdetail span {
+  font-weight:400;
+}
+
+.prjdetail:hover {
+
+}
+
+.prjdetail div {
+text-align:center;
+width:80%;
+}
+
 .about {
     margin:auto;
     width:400px;
-    height:600px;
+    height:400px;
 border:solid white;
 margin-top: 40px;
 }
@@ -323,7 +356,6 @@ height:22px;
 }
 
 .contact {
-
 }
 
 .cardheader {
@@ -341,41 +373,25 @@ height:22px;
 
 footer {
 width:100%;
-height:60px;
+height:80px;
 background-color: black;
 text-align:center;
+color:white;
+font-size:10px;
+line-height:10px;
+padding:4px;
 }
 
-/* @media screen and (max-width: 992px) {
-    div { 
-        flex-flow: column wrap;
-        flex: 1 1 40%;
-        margin-left:2%;
-        margin-right:2%;
-        width:40%;
-    }
-    .intro {
-        font-size:30px;
-        color:#FF5928;
-        line-height:28px;
-    }
-    
-} */
+@media screen and (min-width:768px) {
+  .project {
+    flex-flow:row nowrap;
 
-@media screen and (max-width: 768px) {
-    
-    div { 
-        flex-flow: column wrap;
-        flex: 1 1 100%;
-        /* margin-left:10%;
-        margin-right:10%;  */
-    }
-    .intro {
-        font-size:24px;
-        color:#FF5928;
-        /* line-height:30px; */
-        
-    }
-
+  }
 }
+.prjdetail {
+  flex:1 1 30%;
+  max-height:none;
+  background-color:black;
+}
+
 
