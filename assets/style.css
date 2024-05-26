@@ -221,6 +221,8 @@ margin-top: 40px;
 .prjdetail {
   flex:1 1 30%;
   background-color:#002626;
+  border:solid white;
+  border-width:0.1em;
 }
 
 .prjdetail p {
