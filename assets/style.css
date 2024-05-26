@@ -4,6 +4,9 @@
     box-sizing: border-box;
   }
 
+a {
+  text-decoration: none;
+}
 
 .intro {
     color:#FF5928;
@@ -129,12 +132,12 @@ width:100%;
 
 .banner {
 background-color: #FF5928;
-border: solid;
 color:#002626;
 letter-spacing:3px;
 text-align: center;
 margin-top: 40px;
 padding-top:7px;
+padding-bottom:3px;
 }
 
 .featproject {
@@ -165,7 +168,9 @@ margin-top: 40px;
 
 .fpdetail {
   flex:1 1 10%;
-  background-color:white;
+  background-color:#002626;
+  border:solid white;
+  border-width:0.1em;
 }
 
 .fpdetail p {
@@ -175,8 +180,11 @@ width:70%;
 max-height:76px;
 line-height:20px;
 border:solid;
-color:#002626;
+border-width:0.1em;
+color:white;
 margin-top:37px;
+padding-top:4px;
+padding-bottom:6px;
 }
 
 .project {
@@ -212,7 +220,7 @@ margin-top: 40px;
 
 .prjdetail {
   flex:1 1 30%;
-  background-color:white;
+  background-color:#002626;
 }
 
 .prjdetail p {
@@ -221,9 +229,12 @@ text-align:center;
 width:70%;
 max-height:76px;
 line-height:20px;
-border:solid;
-color:#002626;
+border:solid white;
+border-width:0.1em;
+color:white;
 margin-top:37px;
+padding-top:4px;
+padding-bottom:6px;
 }
 
 .about {
@@ -231,6 +242,7 @@ margin-top:37px;
     width:400px;
     height:400px;
 border:solid white;
+border-width:0.1em;
 margin-top: 40px;
 }
 
@@ -239,6 +251,7 @@ float:left;
 width:53%;
 margin-left:28px;
 margin-top:8px;
+color:white;
 }
 
 .pic {
@@ -250,13 +263,6 @@ margin-top:8px;
 .pic img {
   width:112px;
 
-}
-
-.underpicbox {
-  margin-top:20px;
-  border:solid;
-width:112px;
-height:22px;
 }
 
 footer {
@@ -303,6 +309,8 @@ Used below media query to replace background image accordingly for larger displa
   .prjdetail {
   flex:1 1 30%;
   max-height:none;
+  border:solid white;
+  border-width:0.1em;
   }
 
   .prjdetail p {
@@ -312,8 +320,9 @@ Used below media query to replace background image accordingly for larger displa
   max-height:106px;
   line-height:20px;
   border:solid;
-  color:#002626;
+  color:white;
   margin-top:150px;
+  border-width:0.1em;
   padding:10px;
   }
 
@@ -321,7 +330,7 @@ Used below media query to replace background image accordingly for larger displa
 @media screen and (min-width:1260px) {
   .featprjimg {
     flex:1 1 60%;
-    height:60%
+    height:60%;
     max-height: 550px;
     width:100%;
     flex-flow:column wrap;
@@ -330,5 +339,25 @@ Used below media query to replace background image accordingly for larger displa
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
-  }
+    }
+  .prjdetail {
+    flex:1 1 30%;
+    max-height:none;
+    border:solid white;
+    border-width:0.1em;
+    }
+  
+    .prjdetail p {
+      margin:0 auto;
+    text-align:center;
+    width:70%;
+    max-height:106px;
+    line-height:20px;
+    border:solid white;
+    color:white;
+    margin-top:150px;
+    border-width:0.1em;
+    padding:10px;
+    }
+  
 }
