@@ -23,10 +23,15 @@ a {
 body {
     margin:0;
     background-color: #002626;
+    background:
+    repeating-linear-gradient(45deg, transparent, transparent 10px, #002626 10px, #002626 20px),
+    linear-gradient(to right, #000 0%, #000 3%, #002626 3%, #002626 97%, #000 97%, #000 100%);
+    
     color:#FF5928;
     border-color: #FF5928;
     font-family:  "Barlow Semi Condensed", sans-serif;
 }
+
 header h1 {
     text-align: center;
 }
@@ -78,13 +83,22 @@ nav a {
 width:100%;
 }
 
+@keyframes headanim1{
+  0% {
+    opacity:0;
+  }
+  100% {
+    opacity:1;
+  }
+}
+
 .headerbox {
 
     width:400px;
     height:365px;
     border: solid;
     border-width: 0.1em;
-    border-color:white;
+    border-color:black;
     margin:auto;
     margin-top:220px;
     padding-left:15px;
@@ -93,7 +107,13 @@ width:100%;
 
 }
 
+.intro {
+  opacity:0;
+  animation: headanim1 1s forwards 1s;
+}
+
 .portraitbox {
+    opacity:0;
     border:solid;
     border-width: 0.1em;
     width:273px;
@@ -104,6 +124,7 @@ width:100%;
     margin-top:-200px;
     margin-bottom:140px;
     background-color:#002626;
+    animation: headanim1 1s forwards;
 
     
 }
@@ -121,6 +142,7 @@ width:100%;
 }
 
 .triangle-down {
+  opacity:0;
   display:block;
   margin:auto;
 	width: 0;
@@ -128,6 +150,28 @@ width:100%;
 	border-left: 8px solid transparent;
 	border-right: 8px solid transparent;
 	border-top: 16px solid #FF5928;
+  animation: headanim1 1s forwards 2s;
+}
+
+.nav1 {
+  opacity:0;
+  animation: headanim1 1s forwards 1.25s;
+
+}
+.nav2 {
+  opacity:0;
+  animation: headanim1 1s forwards 1.5s;
+
+}
+.nav3 {
+  opacity:0;
+  animation: headanim1 1s forwards 1.75s;
+
+}
+
+.diagbox {
+  opacity:0;
+  animation: headanim1 0.1s forwards 5.5s;
 }
 
 .banner {
@@ -170,6 +214,9 @@ margin-top: 40px;
   flex:1 1 10%;
   background-color:#002626;
   border:solid white;
+  border-left:none;
+  border-right:none;
+  border-bottom:none;
   border-width:0.1em;
 }
 
@@ -222,6 +269,9 @@ margin-top: 40px;
   flex:1 1 30%;
   background-color:#002626;
   border:solid white;
+  border-right:none;
+  border-left:none;
+  border-bottom:none;
   border-width:0.1em;
 }
 
@@ -234,7 +284,7 @@ line-height:20px;
 border:solid white;
 border-width:0.1em;
 color:white;
-margin-top:37px;
+margin-top:32px;
 padding-top:4px;
 padding-bottom:6px;
 }
@@ -301,6 +351,7 @@ Used below media query to replace background image accordingly for larger displa
     background-size:cover;
     background-position:center;
   }
+
 }
 @media screen and (min-width:768px) {
   .project {
@@ -312,6 +363,9 @@ Used below media query to replace background image accordingly for larger displa
   flex:1 1 30%;
   max-height:none;
   border:solid white;
+  border-right:none;
+  border-top:none;
+  border-bottom:none;
   border-width:0.1em;
   }
 
