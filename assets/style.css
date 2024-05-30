@@ -25,7 +25,7 @@ body {
     background-color: #002626;
     background-image:
     repeating-linear-gradient(45deg, transparent, transparent 12px, #002626 12px, #002626 24px),
-    linear-gradient(to right, #000 0%, #000 3.5%, #002626 3.5%, #002626 96.5%, #000 96.5%, #000 100%);
+    linear-gradient(to right, #001d1d 0%, #001d1d 3.5%, #002626 3.5%, #002626 96.5%, #001d1d 96.5%, #001d1d 100%);
     background-repeat:no-repeat;
     background-size:cover;
     
@@ -178,6 +178,11 @@ width:100%;
 
 .banner {
 background-color: #FF5928;
+background-image:
+repeating-linear-gradient(45deg, transparent, transparent 12px, #ff5928 12px, #ff5928 24px),
+linear-gradient(to right, #d73706 0%, #d73706 3.5%, #ff5928 3.5%, #ff5928 96.5%, #d73706 96.5%, #d73706 100%);
+background-repeat:no-repeat;
+background-size:cover;
 color:#002626;
 letter-spacing:3px;
 text-align: center;
@@ -328,6 +333,11 @@ height:80px;
 margin-top: 40px;
 padding-top:7px;
 background-color: black;
+background-image:
+repeating-linear-gradient(45deg, transparent, transparent 12px, black 12px, black 24px),
+linear-gradient(to right, #161414 0%, #161414 3.5%, black 3.5%, black 96.5%, #161414 96.5%, #161414 100%);
+background-repeat:no-repeat;
+background-size:cover;
 text-align:center;
 color:#AEB8C4;
 font-size:10px;
